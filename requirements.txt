@@ -1,9 +1,9 @@
 Django==3.0.6
-dj-database-url==0.3.0
-dj-static==0.0.6
-json5==0.8.4
+dj-database-url
+dj-static
+json5
 jsonschema==3.0.1
-mysqlclient==1.4.6
+mysqlclient
 pep8==1.7.1
 pylint==2.3.1
 whitenoise==3.2
