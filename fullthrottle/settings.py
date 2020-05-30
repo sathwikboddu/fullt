@@ -75,15 +75,12 @@ WSGI_APPLICATION = 'fullthrottle.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+SECRET_KEY = config('dfjlskfjalskfjdlafsa')
+DEBUG = config('DEBUG', default=False, cast=bool)
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'fullt',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306'
-    }
+    'default': dj_database_url.config(
+        default=config('CLEARDB_DATABASE_URL')
+    )
 }
 
 
