@@ -82,7 +82,7 @@ SECRET_KEY = 'dfjlskfjalskfjdlafsa'
 # DEBUG = config('DEBUG', default=False, cast=bool)
 DATABASES = {
     'default': dj_database_url.config(
-        default=config('CLEARDB_DATABASE_URL')
+        default='CLEARDB_DATABASE_URL'
     )
 }
 
