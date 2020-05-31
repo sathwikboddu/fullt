@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import sys
-from urllib.parse import urlparse
-import dj_database_url 
+import urllib.parse as urlparse
+# import dj_database_url 
 
 # Register database schemes in URLs.
 urlparse.uses_netloc.append('mysql')
