@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import sys
-import urlparse
+from urllib.parse import urlparse
 import dj_database_url 
 
 # Register database schemes in URLs.
@@ -92,8 +92,8 @@ try:
     if 'DATABASES' not in locals():
         DATABASES = {}
 
-    if 'DATABASE_URL' in os.environ:
-        url = urlparse.urlparse(os.environ['DATABASE_URL'])
+    if 'CLEARDB_DATABASE_URL' in os.environ:
+        url = urlparse.urlparse(os.environ['CLEARDB_DATABASE_URL'])
 
         # Ensure default database exists.
         DATABASES['default'] = DATABASES.get('default', {})

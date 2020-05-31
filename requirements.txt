@@ -9,5 +9,6 @@ gunicorn
 psycopg2
 django-heroku
 whitenoise
+urllib
 urlparse
 sys
