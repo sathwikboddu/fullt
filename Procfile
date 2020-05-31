@@ -1,1 +1,1 @@
-web: gunicorn fullt.wsgi --log-file -
+web: gunicorn fullthrottle.wsgi --log-file -
