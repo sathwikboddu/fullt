@@ -8,3 +8,4 @@ pep8
 gunicorn
 psycopg2
 django-heroku
+whitenoise
