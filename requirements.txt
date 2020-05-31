@@ -1,12 +1,10 @@
-Django==3.0.6
+Django
 dj-database-url
 dj-static
 json5
-jsonschema==3.0.1
+jsonschema
 mysqlclient
-pep8==1.7.1
-pylint==2.3.1
-whitenoise==3.2
-gunicorn==19.6.0
+pep8
+gunicorn
 psycopg2
 django-heroku
