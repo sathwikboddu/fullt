@@ -96,7 +96,7 @@ try:
         url = urlparse.urlparse(os.environ['CLEARDB_DATABASE_URL'])
 
         # Ensure default database exists.
-        DATABASES['default'] = DATABASES.get('default', {})
+        DATABASES['default'] = DATABASES.get('default', {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'})
 
         # Update with environment configuration.
         DATABASES['default'].update({
