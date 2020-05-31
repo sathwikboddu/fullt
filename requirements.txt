@@ -9,4 +9,3 @@ gunicorn
 psycopg2
 django-heroku
 whitenoise
-sys
