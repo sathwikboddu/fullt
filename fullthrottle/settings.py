@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'fullthrottle.wsgi.application'
 
 SECRET_KEY = 'dfjlskfjalskfjdlafsa'
 DATABASES = {
-     'default': dj_database_url.config(default="mysql://b3ea6a34bfbf17:51f2e858@us-cdbr-east-05.cleardb.net/heroku_16fb3786abf76ae?init_command=SET sql_mode='STRICT_TRANS_TABLES'&charset=utf8mb4", conn_max_age=500)
+     'default': dj_database_url.config(default="mysql://pknhnu6tix1rx82p:flmjkjgdhmqnq9gd@m7nj9dclezfq7ax1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/vh3oaxy7dlb1othm")
 }
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
